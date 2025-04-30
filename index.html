@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Tambahkan viewport meta -->
+    <title>Sijaga Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <button class="share-button" data-link="">
+            <svg width="20" height="20" viewBox="0 0 16 16">
+                <path fill="currentColor" d="M10.646 3.853L11 4.207l.707-.707-.354-.354L8.354.146H7.646L4.646 3.146l-.354.353.707.707.354-.354L7.5 1.707v7.793h1V1.707l2.146 2.146zM1 5.5l.5-.5H4v1H2v9h12v-9h-2v-1h2.5l.5.5v10l-.5.5H1.5l-.5-.5v-10z"></path>
+            </svg>
+        </button>
+    </header>
+
+    <div class="container">
+        <div class="image-container">
+            <img src="assets/logosijaga.png" alt="Profile Avatar">
+        </div>
+        <h1>Sijaga Hub</h1>
+
+        <a class="tile" href="https://docs.google.com/document/d/184TQRmzgdigu7z8kHahYIRNuZ8U-pRtKOj0U3Za8Li8/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
+            <div class="icon">📺</div>
+            <p>Project Plan</p>
+            <button class="tile-share-button" data-link="https://docs.google.com/document/d/184TQRmzgdigu7z8kHahYIRNuZ8U-pRtKOj0U3Za8Li8/edit?usp=sharing">🔗</button>
+        </a>
+
+        <a class="tile" href="https://lucid.app/lucidspark/27642e1f-2b10-4bd3-88af-a180e56a19fe/edit?view_items=Hpkbm9CNrRlj&invitationId=inv_0c54c144-b43c-410b-b8c4-8768d5d778e7" target="_blank" rel="noopener noreferrer">
+            <div class="icon">🐦</div>
+            <p>Penjadwalan Project</p>
+            <button class="tile-share-button" data-link="https://lucid.app/lucidspark/27642e1f-2b10-4bd3-88af-a180e56a19fe/edit?view_items=Hpkbm9CNrRlj&invitationId=inv_0c54c144-b43c-410b-b8c4-8768d5d778e7">🔗</button>
+        </a>
+
+        <a class="tile" href="https://drive.google.com/drive/folders/13F_5NlF3y5Nk9mRY2SHsZnGcprIJVG5e?usp=sharing" target="_blank" rel="noopener noreferrer">
+            <div class="icon">💡</div>
+            <p>Database Drive</p>
+            <button class="tile-share-button" data-link="https://drive.google.com/drive/folders/13F_5NlF3y5Nk9mRY2SHsZnGcprIJVG5e?usp=sharing">🔗</button>
+        </a>
+    </div>
+
+    <footer>
+        <p>© 2025 Sijaga Dev. All Rights Reserved.</p>
+        <div class="social-links">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </div>
+    </footer>
+
+    <!-- Floating Button -->
+    <button id="customize-btn">🎨</button>
+
+    <!-- Popup Customization -->
+    <div id="custom-modal" class="hidden">
+        <div class="modal-content">
+            <h3>Kustomisasi Background</h3>
+            <label for="bg-color">Pilih Warna:</label>
+            <input type="color" id="bg-color">
+            
+            <label for="bg-image">Upload Gambar:</label>
+            <input type="file" id="bg-image" accept="image/*">
+            
+            <button id="apply-bg">Terapkan</button>
+            <button id="close-modal">Tutup</button>
+            <button id="reset-bg">Reset Background</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
